@@ -1,0 +1,33 @@
+.gallery-container { 
+    padding: 120px 40px; 
+    text-align: center; 
+}
+
+.gallery-container h2 { 
+    font-size: 36px; 
+    margin-bottom: 40px; 
+    color: #bda462;
+}
+
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+}
+
+.photo-card { 
+    cursor: pointer; 
+    overflow: hidden; 
+    border-radius: 10px; 
+}
+
+.photo-card img { 
+    width: 100%; 
+    height: 260px; 
+    object-fit: cover; 
+    transition: 0.3s; 
+}
+
+.photo-card:hover img { 
+    transform: scale(1.1); 
+}

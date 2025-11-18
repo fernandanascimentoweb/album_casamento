@@ -1,0 +1,140 @@
+/* Texto piscando suave */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.blink {
+    animation: blink 2s infinite ease-in-out;
+}
+
+
+
+.hero { 
+    height: 100vh; 
+    width: 100%; 
+    background: url('../../assets/noivos_7.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+}
+
+.hero-overlay { 
+    position: absolute; 
+    inset: 0; 
+    background: radial-gradient(circle, transparent 10%, rgba(0,0,0,0.9)); 
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    top: 50%;
+    left: 120%;
+}
+
+.text img {
+    width: 500px;
+}
+
+.text h1 {
+    color: #bda462;
+    font-size: 22px;
+    z-index: 20;
+}
+
+.hero-content { 
+    position: absolute; 
+    top: 43%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+    color: #bda462; 
+    text-align: center; 
+}
+
+.hero-content h1 { 
+    font-size: 50px; 
+}
+
+.hero-content p { 
+    margin-top: 20px; 
+    font-size: 22px; 
+}
+
+
+@media (max-width: 1024px) {
+    .hero-content {
+        left: 45%;
+        top: 68%;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+
+    .text img {
+        width: 380px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 90vh;
+    }
+
+    .hero-content {
+        top: 73%;
+        left: 55%;
+        width: 90%;
+    }
+
+    .text img {
+        
+        height: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .text {
+        top: 70%;
+    }
+
+    .text img {
+        width: 260px;
+    }
+
+    .text h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .text img {
+        width: 200px;
+    }
+}
+
