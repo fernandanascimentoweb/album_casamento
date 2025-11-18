@@ -27,7 +27,7 @@ to { opacity: 1; transform: scale(1); }
 }
 .viewer-box img {
     width: 800px;
-    height: 600px;
+    height: 400px;
     object-fit: cover;
     background: #000;
     border-radius: 14px;
