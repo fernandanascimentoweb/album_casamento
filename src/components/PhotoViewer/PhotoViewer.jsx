@@ -28,7 +28,7 @@ const PhotoViewer = ({ photo, close, photos, currentIndex, setIndex }) => {
   return (
     <div className="viewer-overlay">
     <div className={`viewer-box ${anim}`}>
-      <span className="close-btn" onClick={close}>×</span>
+      
 
       <img src={photo.img} alt={photo.title} />
 
@@ -36,13 +36,15 @@ const PhotoViewer = ({ photo, close, photos, currentIndex, setIndex }) => {
       <button onClick={handleDownload} className="download-btn">Baixar Foto</button>
 
       <div className='bot'>
-      <button className="nav-arrow left" onClick={() => changePhoto("prev")}>
-        ❮
-      </button>
-      <button className="nav-arrow right" onClick={() => changePhoto("next")}>
-        ❯
-      </button>
+        <button className="nav-arrow left" onClick={() => changePhoto("prev")}>
+          ❮
+        </button>
+        <button className="nav-arrow right" onClick={() => changePhoto("next")}>
+          ❯
+        </button>
       </div>
+      
+      <span className="close-btn" onClick={close}>×</span>
     </div>
 
     </div>
